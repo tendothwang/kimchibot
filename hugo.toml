@@ -1,0 +1,48 @@
+baseURL = 'https://kimchibot.com/'
+languageCode = 'en-us'
+title = 'KimchiBot'
+theme = 'PaperMod'
+
+[params]
+  description = "I tortured Claude Code so you don't have to"
+  author = "KimchiBot"
+  showReadingTime = true
+  showShareButtons = true
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+  defaultTheme = "auto"
+
+  [params.homeInfoParams]
+    Title = "KimchiBot"
+    Content = "Real trading bots built with AI. Real losses. Real lessons."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "#"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    lineNos = true
+    style = "monokai"
