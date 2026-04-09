@@ -4,6 +4,7 @@ title = 'KimchiBot'
 theme = 'PaperMod'
 
 [params]
+  favicon = "/favicon.svg"
   description = "I tortured Claude Code so you don't have to"
   author = "KimchiBot"
   showReadingTime = true
