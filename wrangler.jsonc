@@ -1,0 +1,8 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kimchibot",
+  "compatibility_date": "2026-04-09",
+  "assets": {
+    "directory": "public"
+  }
+}
