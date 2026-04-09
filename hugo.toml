@@ -19,7 +19,7 @@ theme = 'PaperMod'
 
   [[params.socialIcons]]
     name = "github"
-    url = "#"
+    url = "https://github.com/tendothwang"
 
 [menu]
   [[menu.main]]
@@ -37,6 +37,11 @@ theme = 'PaperMod'
     name = "Tags"
     url = "/tags/"
     weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
