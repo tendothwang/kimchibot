@@ -1,0 +1,331 @@
+/* KimchiBot - K-pop x Demon Hunters Theme */
+
+:root {
+  --neon-red: #ff2d55;
+  --neon-pink: #ff3c7f;
+  --cyber-purple: #a855f7;
+  --electric-blue: #3b82f6;
+  --dark-bg: #0a0a0f;
+  --darker-bg: #06060a;
+  --card-bg: #12121a;
+  --border-glow: #ff2d5533;
+  --text-primary: #e8e8ed;
+  --text-secondary: #8888a0;
+}
+
+/* Force dark mode */
+body {
+  --theme: dark;
+  --entry: var(--card-bg);
+  --primary: var(--text-primary);
+  --secondary: var(--text-secondary);
+  --tertiary: #1a1a2e;
+  --content: var(--text-primary);
+  --hljs-bg: var(--darker-bg);
+  --code-bg: var(--darker-bg);
+  --border: #1e1e30;
+  --gap: 24px;
+  background: var(--dark-bg);
+  color: var(--text-primary);
+}
+
+/* Neon glow title */
+.post-title,
+h1 {
+  background: linear-gradient(135deg, var(--neon-red), var(--cyber-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  color: var(--neon-pink);
+  border-bottom: 1px solid var(--border-glow);
+  padding-bottom: 8px;
+}
+
+h3 {
+  color: var(--cyber-purple);
+}
+
+/* Home title special treatment */
+.first-entry .entry-header h2,
+.home-info .entry-content {
+  background: linear-gradient(135deg, var(--neon-red), var(--cyber-purple), var(--electric-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Accent links */
+a {
+  color: var(--neon-pink);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--cyber-purple);
+  text-shadow: 0 0 8px var(--cyber-purple);
+}
+
+/* Navigation - sleek dark bar */
+.nav {
+  background: var(--darker-bg);
+  border-bottom: 1px solid var(--border-glow);
+  backdrop-filter: blur(10px);
+}
+
+.nav a {
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85em;
+}
+
+.nav a:hover {
+  color: var(--neon-red);
+  text-shadow: 0 0 12px var(--neon-red);
+}
+
+/* Logo text */
+.logo a {
+  background: linear-gradient(135deg, var(--neon-red), var(--neon-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+  font-size: 1.4em;
+  letter-spacing: -0.5px;
+}
+
+.logo a:hover {
+  text-shadow: none;
+  filter: brightness(1.2);
+}
+
+/* Post cards - dark with glow border on hover */
+.post-entry {
+  background: var(--card-bg);
+  border: 1px solid #1e1e30;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.post-entry:hover {
+  border-color: var(--neon-red);
+  box-shadow: 0 0 20px var(--border-glow), 0 0 40px rgba(168, 85, 247, 0.1);
+  transform: translateY(-2px);
+}
+
+.entry-header h2 {
+  background: none;
+  -webkit-text-fill-color: var(--text-primary);
+  border: none;
+  padding: 0;
+}
+
+.post-entry:hover .entry-header h2 {
+  color: var(--neon-pink);
+  -webkit-text-fill-color: var(--neon-pink);
+}
+
+/* Tags - neon pill style */
+.post-tags a {
+  background: transparent;
+  border: 1px solid var(--neon-red);
+  color: var(--neon-red);
+  border-radius: 20px;
+  padding: 2px 12px;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+.post-tags a:hover {
+  background: var(--neon-red);
+  color: white;
+  -webkit-text-fill-color: white;
+  box-shadow: 0 0 12px var(--border-glow);
+}
+
+/* Code blocks - deep dark */
+.highlight pre,
+code {
+  background: var(--darker-bg) !important;
+  border: 1px solid #1e1e30;
+  border-radius: 6px;
+}
+
+.highlight pre {
+  padding: 16px;
+}
+
+code {
+  color: var(--neon-pink);
+  padding: 2px 6px;
+  font-size: 0.9em;
+}
+
+/* Blockquotes - accent bar */
+blockquote {
+  border-left: 3px solid var(--neon-red);
+  background: var(--card-bg);
+  padding: 12px 20px;
+  border-radius: 0 6px 6px 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+th {
+  background: var(--card-bg);
+  color: var(--neon-pink);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.5px;
+  padding: 10px 14px;
+  border-bottom: 2px solid var(--neon-red);
+}
+
+td {
+  padding: 8px 14px;
+  border-bottom: 1px solid #1e1e30;
+}
+
+tr:hover {
+  background: var(--card-bg);
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--neon-red), var(--cyber-purple), transparent);
+  margin: 32px 0;
+}
+
+/* Selection color */
+::selection {
+  background: var(--neon-red);
+  color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--neon-red), var(--cyber-purple));
+  border-radius: 4px;
+}
+
+/* Reading time & post meta */
+.post-meta {
+  color: var(--text-secondary);
+  font-size: 0.85em;
+}
+
+/* Share buttons */
+.share-buttons a {
+  color: var(--text-secondary);
+}
+
+.share-buttons a:hover {
+  color: var(--neon-pink);
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #1e1e30;
+  color: var(--text-secondary);
+}
+
+.footer a {
+  color: var(--cyber-purple);
+}
+
+/* Breadcrumbs */
+.breadcrumbs a {
+  color: var(--text-secondary);
+}
+
+.breadcrumbs a:hover {
+  color: var(--neon-pink);
+}
+
+/* Post content emphasis */
+strong {
+  color: var(--neon-pink);
+  font-weight: 700;
+}
+
+em {
+  color: var(--text-secondary);
+}
+
+/* Home info section */
+.home-info {
+  padding: 40px 0;
+}
+
+.home-info h1 {
+  font-size: 2.5em;
+  margin-bottom: 8px;
+}
+
+/* Pagination */
+.pagination a {
+  color: var(--text-secondary);
+  border: 1px solid #1e1e30;
+  border-radius: 4px;
+  padding: 4px 12px;
+}
+
+.pagination a:hover {
+  border-color: var(--neon-red);
+  color: var(--neon-red);
+}
+
+/* Theme toggle button */
+#theme-toggle {
+  display: none;
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .home-info h1 {
+    font-size: 1.8em;
+  }
+
+  .nav a {
+    font-size: 0.75em;
+  }
+}

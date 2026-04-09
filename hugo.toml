@@ -11,7 +11,8 @@ theme = 'PaperMod'
   showPostNavLinks = true
   showBreadCrumbs = true
   showCodeCopyButtons = true
-  defaultTheme = "auto"
+  defaultTheme = "dark"
+  disableThemeToggle = true
 
   [params.homeInfoParams]
     Title = "KimchiBot"
