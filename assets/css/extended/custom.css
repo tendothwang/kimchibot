@@ -314,8 +314,8 @@ em {
   display: none;
 }
 
-/* Smooth transitions */
-* {
+/* Smooth transitions — only on interactive elements */
+a, .post-entry, .post-tags a, .pagination a, #theme-toggle {
   transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
