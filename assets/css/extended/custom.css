@@ -75,7 +75,6 @@ a:hover {
 .nav {
   background: var(--darker-bg);
   border-bottom: 1px solid var(--border-glow);
-  backdrop-filter: blur(10px);
 }
 
 .nav a {
@@ -119,7 +118,6 @@ a:hover {
 .post-entry:hover {
   border-color: var(--neon-red);
   box-shadow: 0 0 20px var(--border-glow), 0 0 40px rgba(168, 85, 247, 0.1);
-  transform: translateY(-2px);
 }
 
 .entry-header h2 {
