@@ -37,32 +37,23 @@ You set a trigger price AND a limit price. When triggered, a limit order is plac
 
 ## How much does STOP_MARKET slippage actually cost?
 
-Here's what I measured on my bot over 250+ stop loss events:
-
-| Metric | STOP_MARKET | STOP_LIMIT |
-|--------|------------|------------|
-| Average slippage | 0.3-0.8% | ~0% |
-| Worst case slippage | 2.1% | 0% (but may not fill) |
-| Fill rate | 100% | ~99% |
-| Fill speed | Instant | Instant (if liquidity exists) |
-
-Let's do the math on a typical setup:
+The exact cost depends on the coin, the time of day, and market conditions. But here's the math on a typical setup:
 
 - Trade size: $200
 - Leverage: 3x
 - Notional: $600
 - SL at 2.0%
 
-**STOP_MARKET** with 0.5% average slippage:
+If STOP_MARKET slippage averages even 0.3%:
 ```
 Expected loss: $600 × 2.0% = $12.00
-Actual loss:   $600 × 2.5% = $15.00
-Extra cost per SL: $3.00
+Actual loss:   $600 × 2.3% = $13.80
+Extra cost per SL: $1.80
 ```
 
-Over 250 stop losses: **$750 in hidden costs.**
+Over hundreds of stop losses, this adds up. With STOP_LIMIT, the fill price matches the trigger price almost exactly — because you control the limit.
 
-That's not a rounding error. That's a strategy going from profitable to breakeven.
+The point isn't the exact number. It's that **every STOP_MARKET order pays a hidden tax**, and over time, that tax can be the difference between profitable and breakeven.
 
 ## Why is STOP_MARKET slippage worse during crashes?
 
@@ -162,7 +153,7 @@ def check_sl_status(exchange, sl_order_id):
     return 'PENDING'  # Not triggered yet
 ```
 
-In practice, with a 0.2% buffer between trigger and limit price, my fill rate is ~99%. The 1% unfilled cases get caught by the emergency market close within seconds.
+In practice, with a 0.2% buffer between trigger and limit price on liquid Binance Futures pairs, unfilled cases are rare. When they do happen, the emergency market close catches them within seconds.
 
 ## What happens when a stop loss cancel fails on Binance?
 
@@ -210,17 +201,13 @@ def safe_exit(exchange, symbol, position, sl_order_id):
 
 The buffer between trigger price and limit price is a tradeoff:
 
-| Buffer | Fill Rate | Slippage Protection |
-|--------|-----------|-------------------|
-| 0.0% | ~90% | Maximum (fills at trigger or better) |
-| 0.1% | ~95% | Very good |
-| 0.2% | ~99% | Good (my choice) |
-| 0.5% | ~99.9% | Moderate |
-| 1.0% | ~100% | Weak (basically a market order) |
+- **Too tight (0%):** Maximum protection, but the limit order may not fill if price moves fast.
+- **Sweet spot (0.1-0.3%):** Good protection with reliable fills on liquid pairs.
+- **Too wide (1%+):** Almost always fills, but you're giving up most of the advantage over STOP_MARKET.
 
-I use **0.2%**. It's tight enough to save real money vs STOP_MARKET, but wide enough that it almost always fills.
+I use **0.2%**. It's tight enough to save real money vs STOP_MARKET, but wide enough that it almost always fills on Binance top-20 futures pairs.
 
-At 1.0% buffer, you're giving up most of the advantage — you might as well use STOP_MARKET.
+The right buffer depends on the coin's liquidity. For BTC/ETH, 0.1% is fine. For smaller altcoins, you might need 0.3-0.5%.
 
 ## When should you use STOP_MARKET instead of STOP_LIMIT?
 
@@ -232,20 +219,16 @@ STOP_LIMIT isn't always better:
 
 For bots trading top-20 Binance Futures pairs? STOP_LIMIT every time.
 
-## How much money did switching to STOP_LIMIT save?
+## Is the extra complexity worth it?
 
-After switching my bot from STOP_MARKET to STOP_LIMIT:
+STOP_LIMIT is harder to implement than STOP_MARKET. You need to handle:
+- Binance algo order API (separate endpoints)
+- Unfilled limit detection + emergency market fallback
+- Cancel failure recovery
 
-| Metric | Before | After |
-|--------|--------|-------|
-| Average SL cost | -2.5% (0.5% slippage) | -2.05% (~0% slippage) |
-| SL events (3 months) | 250 | 250 |
-| Total slippage cost | ~$750 | ~$25 |
-| Extra complexity | Low | Medium (algo order API + unfill detection) |
+But the benefit is clear: your stop losses fill at predictable prices instead of paying slippage to the order book. Over hundreds of trades, even 0.2-0.3% less slippage per SL compounds into meaningful savings.
 
-**$725 saved over 3 months.** That's pure profit recovered from the exchange's order book.
-
-The implementation is more complex. You need to handle algo order APIs, unfilled limits, cancel failures. But the math is clear.
+For bots trading top-20 Binance Futures pairs with decent volume, the implementation cost pays for itself quickly.
 
 ---
 

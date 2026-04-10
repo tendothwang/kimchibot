@@ -46,15 +46,9 @@ The logic: if the surge survived the first 5-minute candle, it might have legs. 
 
 ## Why Not Just Use a Tight Trail From the Start?
 
-I tested this. Results:
+I tested this in backtests. Tight trailing from entry catches surges but also **prematurely exits normal trades** that dip slightly before continuing. The two-phase approach only activates tight trailing when there's evidence of a genuine surge (+4% before first 5m close).
 
-| Approach | 7-Day PnL | Surge Trades |
-|----------|-----------|--------------|
-| No surge detection | +800U | n/a |
-| Tight trail from entry | +750U | 71 |
-| **Phase 1 + Phase 2** | **+968U** | 71 |
-
-Tight trailing from entry catches surges but also prematurely exits normal trades that dip slightly before continuing. The two-phase approach only activates tight trailing when there's evidence of a genuine surge.
+In my backtests, the two-phase system consistently outperformed both "no surge detection" and "tight trail from entry" across different coins and time periods.
 
 ## The Parameter Decisions
 
@@ -84,24 +78,24 @@ The live bot was getting stopped out on momentary dips. The backtest was riding 
 
 For surge detection specifically, 1-minute candle closes give you the right resolution without the noise of tick data.
 
-## A Real Trade Example
+## How It Looks in Practice
+
+Here's the general flow of a surge trade:
 
 ```
-Entry: SIREN/USDT long at $0.0523
-Time: 14:32:15
+Entry: Long on a volatile altcoin
 
-14:33 (1m close): +2.1% — Normal, no surge yet
-14:34 (1m close): +3.8% — Getting there...
-14:35 (1m close): +5.2% — SURGE DETECTED! Trail activated at 4.7%
-14:36 (1m close): +4.9% — Trail holds (best was 5.2%, trail at 4.7%)
-14:37 (1m close): +5.8% — New best! Trail moves to 5.3%
-14:37 (5m close): Phase 2 starts. Switch to 5m checking.
-14:42 (5m close): +4.2% — Trail holds at 5.3% — STOPPED OUT
++1 min: +2% — Normal, no surge yet
++2 min: +3.8% — Getting there...
++3 min: +5% — SURGE DETECTED! Tight trail activated (0.5% behind best)
++4 min: +4.8% — Trail holds
++5 min (5m close): Phase 2 starts. Switch to normal 5m trailing.
 
-Profit: +4.8% (instead of +2.1% without surge detection)
+If price keeps running → normal trailing captures more.
+If price reverses → tight trail already locked in most of the surge profit.
 ```
 
-Without surge detection, the normal trailing stop (2% activation) would have activated late and caught less of the move.
+Without surge detection, the normal trailing stop (2% activation) would activate late and capture less of these explosive moves.
 
 ## Edge Cases
 

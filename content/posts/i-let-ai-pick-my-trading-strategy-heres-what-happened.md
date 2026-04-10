@@ -22,7 +22,7 @@ I didn't just say "give me a trading strategy." That would have gotten me a gene
 Instead, I gave it context:
 
 1. **My dead bots** — what each one did and why it failed
-2. **My constraints** — $500 starting capital, Binance Futures, 3x leverage max
+2. **My constraints** — limited starting capital, Binance Futures, 3x leverage max
 3. **My backtest results** — the actual numbers, including the ones that looked good but failed live
 4. **My principles** — risk-reward > win rate, no overfitting, must survive trending AND sideways markets
 
@@ -69,66 +69,37 @@ That's it. No prediction. No "RSI is oversold so it should bounce." Just: **is s
 
 In my previous bots, I entered on price signals alone. Claude pointed out that price moves without volume are noise — they reverse immediately. Volume confirms that real money is behind the move.
 
-Before the volume filter: 40% win rate, barely profitable.
-After: 57% win rate, consistently profitable.
+Adding a volume ratio filter significantly improved the win rate and overall profitability.
 
-### What Claude Got Wrong
+### What I Had to Override
 
-Claude initially suggested using multiple timeframe confirmation — check 5m, 15m, 1h, and 4h signals before entering.
+Not everything Claude suggested worked. Some ideas sounded logical but performed poorly in backtests. The key lesson: **AI gives you good frameworks, but the specific implementation needs human judgment and backtesting.**
 
-Sounds logical. More confirmation = more certainty, right?
-
-**In practice, it killed the bot.** By the time all four timeframes aligned, the move was already over. The bot entered at the top of every trend.
-
-I removed it and went back to single-timeframe (5m) with a simple choppiness filter. Fewer signals, but they worked.
-
-**Lesson: AI gives you good frameworks but bad parameter choices.** The structural idea was sound. The specific implementation needed human judgment and backtesting.
+Every suggestion got tested. Some survived. Many didn't. The ones that survived became the final strategy.
 
 ## The Iteration Loop
 
-Here's how the collaboration actually worked:
+The collaboration followed a consistent pattern:
 
-```
-Me:     "The bot lost $50 this week. Here are the trades."
-Claude: "Look at trades #12, #18, #23 — all entered during 
-         choppy markets. Your entry filter needs a regime detector."
-
-Me:     "I added CHOP index. Now it filters 40% of trades."
-Claude: "Run the backtest. What's the PnL delta?"
-
-Me:     "Net PnL went from +100 to +180. But I'm missing 
-         some winning trades too."
-Claude: "That's expected. Show me the filtered trades — 
-         are the missed winners bigger or smaller than average?"
-
-Me:     "Smaller. Average $4 vs $7 for the ones that passed."
-Claude: "Then the filter is working. It's cutting noise, 
-         not edge. Keep it."
-```
-
-This back-and-forth happened dozens of times. Each cycle:
 1. Run the bot or backtest
-2. Dump the results to Claude
-3. Get analysis and suggestions
-4. Implement, test, repeat
+2. Show Claude the results — actual trade logs, PnL numbers, losing trades
+3. Claude analyzes patterns: "most losses happen during choppy markets" or "this SL level is too tight"
+4. I implement the suggestion, backtest again
+5. Repeat
 
-**Claude never wrote the final strategy alone.** It analyzed data faster than I could, spotted patterns I missed, and challenged my assumptions. But the decisions were mine.
+This cycle happened dozens of times over weeks. Each round, the strategy got slightly better.
+
+**Claude never wrote the final strategy alone.** It analyzed data faster than I could, spotted patterns I missed, and challenged my assumptions. But the decisions — which suggestions to keep, which to reject — were mine.
 
 ## The Parameter Optimization Trap
 
-At one point, Claude suggested running a grid search across 15 parameters to find the optimal combination.
+Grid searching parameters is where AI becomes dangerous. Claude can find the "optimal" combination faster than any human — but "optimal on training data" usually means "overfitted."
 
-The grid search found a combination that returned +1,400 USDT in backtesting. Incredible.
+I learned this the hard way with my momentum bot. Amazing backtest. Terrible out-of-sample. The parameters had memorized the past instead of finding a real pattern.
 
-I almost deployed it. Then I remembered my momentum bot — the one that died from overfitting. I asked Claude to run the same parameters on out-of-sample data.
+The fix was to optimize fewer parameters at a time (2-3 max), use longer data periods, and **always validate on out-of-sample data**. When training results and OOS results diverge, the training results are lying.
 
-Result: **-200 USDT.**
-
-The "optimal" parameters had memorized the training data. Classic overfitting.
-
-We went back to simpler parameters — fewer variables, wider ranges, less precision. The backtest dropped to +800 USDT, but the out-of-sample held at +500 USDT.
-
-**I asked Claude for the best parameters. Claude gave them to me. They were wrong.** Not because Claude is bad at optimization — because optimization itself is the trap. AI can find the overfitted peak faster than any human. That doesn't make it useful.
+**AI can find the overfitted peak faster than any human. That doesn't make it useful.** The discipline to reject "optimal" parameters in favor of robust ones is a human job.
 
 ## What AI Is Actually Good At (In Trading)
 
@@ -138,7 +109,7 @@ After months of this, here's my honest assessment:
 | Task | Why |
 |------|-----|
 | **Bug detection** | "Your SL is checking best_price but should check worst_price" |
-| **Pattern analysis** | "80% of your losses happen in the first hour of Asia session" |
+| **Pattern analysis** | "Most losses cluster in specific market conditions — here's where" |
 | **Code generation** | Building the actual bot, fast and (mostly) correct |
 | **Framework design** | "You need trend detection + volume confirmation + regime filter" |
 | **Failure analysis** | "This strategy fails because X, not because of bad luck" |

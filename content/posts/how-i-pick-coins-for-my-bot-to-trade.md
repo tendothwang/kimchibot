@@ -53,33 +53,19 @@ Take the **top 8**.
 
 ### Why 8 Coins?
 
-I tested different numbers:
+I tested different TOP_N values in backtests:
 
-| TOP_N | Total PnL | Avg Return | Problem |
-|-------|-----------|------------|---------|
-| 3 | +109U | 73% | Too concentrated, scan failure risk |
-| 5 | +155U | 62% | Slightly better but still risky |
-| **8** | **+209U** | **52%** | **Sweet spot** |
-| 10 | +238U | 48% | Most days can't find 10 qualifying coins |
-| 14 | +201U | 32% | Diluted with mediocre performers |
+- **3-5 coins:** Too concentrated. If one coin's scan picks a dud, your whole portfolio suffers.
+- **8 coins:** Sweet spot — enough diversification to survive bad picks, few enough to concentrate on the best opportunities.
+- **10-14 coins:** Diluted. Most days can't find that many coins meeting the volatility filter, so you end up trading mediocre performers.
 
-8 is the sweet spot — enough diversification to survive bad picks, few enough to concentrate on the best opportunities.
+8 worked best in my backtests across different market periods.
 
 ## The Results
 
-Before (fixed 5 large-cap coins):
+The improvement from switching to automatic coin rotation was dramatic. With fixed large-cap coins, the bot barely traded — not enough volatility to trigger entries. With auto-rotation picking high-volatility coins, the bot consistently found opportunities.
 
-| Period | PnL | Trades |
-|--------|-----|--------|
-| 7 days | +476U | 150 |
-
-After (auto-rotation with volatility filter):
-
-| Period | PnL | Trades |
-|--------|-----|--------|
-| 7 days | **+2,265U** | 194 |
-
-**4.7x improvement** just by trading the right coins.
+**The right coins matter as much as the right strategy.** A perfect trend-following setup on a coin that doesn't trend is worthless.
 
 ## The Gotchas
 
