@@ -7,7 +7,7 @@ categories: ["Strategy"]
 summary: "After killing 4 bots, I built one that survived backtesting, dry runs, and live trading. Here's the full breakdown."
 ---
 
-## The Survivor
+## Can a trend following bot actually make money in crypto?
 
 Out of 6 bots I built, this is the one that lived. The Trend Following Bot v4.0.
 
@@ -15,7 +15,7 @@ It's not sexy. It doesn't have a fancy name. It doesn't promise 1000% returns. B
 
 Here's how it works.
 
-## The Core Idea
+## How does a trend following trading bot work?
 
 **Follow the trend. Don't predict it.**
 
@@ -23,7 +23,7 @@ When a coin starts moving with strong momentum and volume, jump on. When the mom
 
 Most beginner traders try to predict reversals. "It's gone up too much, it must come down." This is how you blow up. Markets can stay irrational longer than you can stay solvent.
 
-## Entry Conditions
+## What entry signals does the bot use?
 
 The bot scans every 5 minutes. To enter a trade, ALL of these must be true:
 
@@ -44,7 +44,7 @@ This is the most important filter. It keeps the bot out of sideways markets wher
 ### 4. BTC RSI ≥ 35 (Longs Only)
 Don't go long on altcoins when Bitcoin is in freefall. Simple but effective.
 
-## Exit Strategy
+## How does the bot exit trades?
 
 Getting in is easy. Getting out is where the real money is made or lost.
 
@@ -69,7 +69,7 @@ This captures explosive moves without giving back too much profit.
 ### Time-Based Take Profit
 After 30 minutes, if profit ≥ 0.5%, switch to a tight 0.25% trailing stop. This prevents winners from becoming losers due to momentum exhaustion.
 
-## Coin Selection
+## How does the bot automatically select which coins to trade?
 
 The bot doesn't trade the same coins forever. Every 3 hours, it automatically:
 
@@ -85,7 +85,7 @@ This way, the bot always trades the coins that are actually moving right now.
 - 3x leverage (conservative for crypto)
 - Compound growth — profits increase position sizes
 
-## The Numbers
+## What are realistic win rates and returns for a trend following bot?
 
 This isn't a get-rich-quick setup. Here's what realistic performance looks like:
 
@@ -98,7 +98,7 @@ The key insight from an expert I respect:
 
 > "Total returns are far more influenced by risk-reward ratio than by win rate. A 1:1.5 risk-reward with 30-40% win rate is enough."
 
-## What Makes It Different
+## What makes this bot different from other trend following bots?
 
 ### 1. Separate Long/Short Parameters
 Longs and shorts behave differently in crypto. Crashes are faster than rallies. The bot uses different VR thresholds, SL levels, and trailing parameters for each direction.
@@ -112,7 +112,7 @@ Most signals are rejected. CHOP filter alone eliminates ~60% of potential entrie
 ### 4. Backtest-Live Parity
 Every parameter in the live bot has an exact match in the backtest. I verify regularly that live trades match backtest predictions within 0.5U. This took weeks of debugging but it's the foundation of trust in the system.
 
-## The Ugly Parts
+## What are the weaknesses of a trend following bot?
 
 It's not all profits:
 

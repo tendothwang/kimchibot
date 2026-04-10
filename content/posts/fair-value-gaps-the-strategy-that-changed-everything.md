@@ -7,7 +7,7 @@ categories: ["Strategy"]
 summary: "After trend-following, I built a completely different bot based on Fair Value Gaps. It passed a full year of out-of-sample testing."
 ---
 
-## What Is a Fair Value Gap?
+## What is a Fair Value Gap in trading?
 
 A Fair Value Gap (FVG) is a price imbalance visible on the chart. It happens when a candle moves so aggressively that it leaves a "gap" between the candle before and after it.
 
@@ -33,7 +33,7 @@ Bearish FVG:
 
 When price returns to this gap zone, it often bounces. That's the trade.
 
-## The Bot Logic
+## How do you build a trading bot based on Fair Value Gaps?
 
 1. **Detect FVG** on 5-minute candles
 2. **Place limit order** at the FVG edge (entry price)
@@ -42,7 +42,7 @@ When price returns to this gap zone, it often bounces. That's the trade.
 
 Simple. Clean. No indicators needed — just price action.
 
-## The Filters That Matter
+## What filters improve FVG trading bot performance?
 
 Not every FVG is worth trading. After extensive testing, these filters survived:
 
@@ -65,7 +65,7 @@ Don't fight the trend, even with mean-reversion setups.
 ### SL Ratio < 65%
 If more than 65% of historical trades on a coin hit stop loss, skip that coin. Some coins just don't respect FVGs.
 
-## What I Tested and Rejected
+## Which FVG filters look good but actually don't work?
 
 This is equally important — what looked promising but failed:
 
@@ -80,7 +80,7 @@ This is equally important — what looked promising but failed:
 
 Data said otherwise. This is why you test everything.
 
-## Out-of-Sample Validation
+## Does the FVG strategy survive out-of-sample testing?
 
 Here's where most strategies die. I tested across **4 quarters, 10 coins**:
 
@@ -97,7 +97,7 @@ Here's where most strategies die. I tested across **4 quarters, 10 coins**:
 
 This isn't overfitting. This is edge.
 
-## Live Performance
+## How does the FVG bot perform in live trading?
 
 After the out-of-sample validation, I deployed it live:
 
@@ -108,7 +108,7 @@ After the out-of-sample validation, I deployed it live:
 
 The live-backtest match rate after fixing all the bugs: **100% entry price match**, minor SL timing differences only.
 
-## FVG vs Trend Following
+## Should you use FVG or trend following for crypto trading bots?
 
 I now run both bots simultaneously. They complement each other:
 

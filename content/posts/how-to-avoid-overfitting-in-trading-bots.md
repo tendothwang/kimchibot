@@ -7,7 +7,7 @@ categories: ["Guide"]
 summary: "Overfitting is the #1 killer of trading bots. Here's a practical checklist to detect and prevent it, based on real experience."
 ---
 
-## What Is Overfitting?
+## What is overfitting in trading bots and why does it matter?
 
 Your trading bot's backtest shows +500% returns. You deploy it. It loses money immediately.
 
@@ -15,7 +15,7 @@ Your trading bot's backtest shows +500% returns. You deploy it. It loses money i
 
 This is the #1 reason trading bots fail in production.
 
-## The Overfitting Checklist
+## How do you detect overfitting in a trading bot?
 
 Use this checklist every time you build or modify a strategy. If you answer "yes" to any of these, you might be overfitting.
 
@@ -130,7 +130,7 @@ Every condition in your strategy should have a logical reason:
 
 If you added a rule just because it improved the backtest but you can't explain the logic, it's probably overfitting.
 
-## The Prevention Protocol
+## How do you prevent overfitting in trading bot backtests?
 
 ### Step 1: Walk-Forward Analysis
 
@@ -182,7 +182,7 @@ The strategies that survived:
 
 **Simple strategies are harder to overfit.**
 
-## The Ultimate Test
+## What is the simplest test for overfitting?
 
 Ask yourself:
 

@@ -7,7 +7,7 @@ categories: ["Engineering"]
 summary: "STOP_MARKET is the default stop loss on Binance Futures. It's also silently eating your profits through slippage. Here's exactly how much it costs and how to switch to STOP_LIMIT."
 ---
 
-## The Problem You Don't Know You Have
+## What is the difference between STOP_MARKET and STOP_LIMIT on Binance Futures?
 
 Open your Binance Futures trade history. Look at your stop loss exits. Compare the trigger price to the actual fill price.
 
@@ -15,7 +15,7 @@ That gap? That's slippage. And if you're using STOP_MARKET orders, it's happenin
 
 I didn't notice it for months. Then I did the math.
 
-## STOP_MARKET vs STOP_LIMIT: What's the Difference?
+## How does each order type work?
 
 ### STOP_MARKET
 
@@ -35,7 +35,7 @@ Limit order fills at $99.80 or better.
 
 You set a trigger price AND a limit price. When triggered, a limit order is placed. You control the worst-case fill price.
 
-## The Real Cost of STOP_MARKET
+## How much does STOP_MARKET slippage actually cost?
 
 Here's what I measured on my bot over 250+ stop loss events:
 
@@ -64,7 +64,7 @@ Over 250 stop losses: **$750 in hidden costs.**
 
 That's not a rounding error. That's a strategy going from profitable to breakeven.
 
-## The Cascade Effect
+## Why is STOP_MARKET slippage worse during crashes?
 
 STOP_MARKET slippage isn't random. It's **worst exactly when you need it most**.
 
@@ -81,7 +81,7 @@ This is called **cascade liquidation**. Your STOP_MARKET order doesn't just suff
 
 STOP_LIMIT orders don't contribute to this cascade because they add liquidity to the book instead of consuming it.
 
-## How to Implement STOP_LIMIT on Binance (with ccxt)
+## How do you place a STOP_LIMIT order on Binance Futures with ccxt?
 
 ### Placing the Order
 
@@ -164,7 +164,7 @@ def check_sl_status(exchange, sl_order_id):
 
 In practice, with a 0.2% buffer between trigger and limit price, my fill rate is ~99%. The 1% unfilled cases get caught by the emergency market close within seconds.
 
-## Cancel Failures: The Silent Position Killer
+## What happens when a stop loss cancel fails on Binance?
 
 Here's a scenario that actually happened to me:
 
@@ -206,7 +206,7 @@ def safe_exit(exchange, symbol, position, sl_order_id):
 
 **Key insight:** Close first, cancel second. The market close is instant. The SL cancel can wait. And `reduceOnly` is your safety net — if the position is already closed, the SL order can't open a new one.
 
-## The Limit Price Buffer: How Much?
+## What limit price buffer should you use for STOP_LIMIT?
 
 The buffer between trigger price and limit price is a tradeoff:
 
@@ -222,7 +222,7 @@ I use **0.2%**. It's tight enough to save real money vs STOP_MARKET, but wide en
 
 At 1.0% buffer, you're giving up most of the advantage — you might as well use STOP_MARKET.
 
-## When to Use STOP_MARKET Anyway
+## When should you use STOP_MARKET instead of STOP_LIMIT?
 
 STOP_LIMIT isn't always better:
 
@@ -232,7 +232,7 @@ STOP_LIMIT isn't always better:
 
 For bots trading top-20 Binance Futures pairs? STOP_LIMIT every time.
 
-## The Before and After
+## How much money did switching to STOP_LIMIT save?
 
 After switching my bot from STOP_MARKET to STOP_LIMIT:
 

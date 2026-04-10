@@ -7,7 +7,7 @@ categories: ["Engineering"]
 summary: "A collection of Binance Futures API quirks that aren't in the documentation. Each one cost me hours."
 ---
 
-## 1. Time Synchronization Will Break Everything
+## How do you fix Binance API timestamp errors?
 
 Your first API call will probably fail with:
 
@@ -30,7 +30,7 @@ exchange.load_time_difference()
 
 And **resync every hour**. I learned this after random failures at 3 AM when nobody was around to restart the bot.
 
-## 2. fetch_balance() — Don't Pass Parameters
+## Why does fetch_balance return zero on Binance Futures?
 
 On Binance Futures, the "correct" way to fetch your USDT balance:
 
@@ -46,7 +46,7 @@ The `type` parameter behaves differently across exchange versions. Without param
 
 I spent half a day debugging "why is my balance always zero" because of this.
 
-## 3. STOP Orders Are "Algo Orders"
+## Why can't I find my stop order with fetch_order on Binance?
 
 This is the biggest gotcha. On Binance Futures, any order with a `stopPrice` is treated as a **conditional/algorithmic order**. This means:
 
@@ -68,7 +68,7 @@ exchange.fapiPrivateGetOpenAlgoOrders()
 
 This is barely documented. I only found it by reading ccxt source code and Binance API changelogs.
 
-## 4. ReduceOnly Rejection After Position Close
+## What does "ReduceOnly order is getting rejected" mean on Binance?
 
 Race condition: your trailing stop closes a position via market order, then your exchange-side SL triggers on the same position. The SL order gets rejected with:
 
@@ -80,7 +80,7 @@ This is actually fine — it means the position is already closed. But if your b
 
 **Fix:** Catch `-2022` errors and treat them as "position already closed, move on."
 
-## 5. TradFi Tokens Need Agreement Signing
+## How do you fix the TradFi-Perps agreement error on Binance?
 
 If your bot tries to trade TSLA/USDT, NVDA/USDT, or other equity-backed tokens:
 
@@ -98,7 +98,7 @@ for symbol, market in exchange.markets.items():
 
 This catches equities, commodities, indices, and pre-market tokens — about 24 pairs that will cause problems.
 
-## 6. Candle Data Timing
+## Why does fetch_ohlcv return stale candle data on Binance?
 
 When you call `fetch_ohlcv()` right after a 5-minute candle closes, the API might return stale data. The new candle takes 1-3 seconds to appear.
 
@@ -121,7 +121,7 @@ for attempt in range(5):
 
 Verify the timestamp. Don't trust sleep timers.
 
-## 7. Order Dust
+## How do you handle order dust on Binance Futures?
 
 After closing a position, you sometimes have tiny leftover amounts (0.001 of a coin) that are too small to trade. These show up as phantom positions in your balance.
 
@@ -129,13 +129,13 @@ The API says you have a position. You can't close it because it's below minimum 
 
 **Fix:** Check position size against the market's minimum order quantity before treating it as an active position.
 
-## 8. Rate Limits Are Per-IP, Not Per-Key
+## Are Binance API rate limits per API key or per IP address?
 
 If you're running multiple bots from the same server, they share rate limits. I found this out when my trend-following bot and FVG bot started getting `429 Too Many Requests` errors simultaneously.
 
 **Fix:** Stagger your API calls. Use `enableRateLimit: True` in ccxt, and add small delays between bot instances.
 
-## 9. Resampled vs Native Candles
+## Why is resampled RSI different from native candle RSI on Binance?
 
 This is subtle. If you build 1-hour candles by combining 5-minute candles:
 

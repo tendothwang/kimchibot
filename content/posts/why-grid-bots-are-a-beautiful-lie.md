@@ -7,7 +7,7 @@ categories: ["Strategy"]
 summary: "Grid bots look perfect on paper. Buy low, sell high, automatically. Here's why I killed mine after a week."
 ---
 
-## The Promise
+## Do grid bots actually work for crypto trading?
 
 Every crypto trading channel sells you the same dream: **grid bots**.
 
@@ -17,7 +17,7 @@ I built one with Claude Code. It took about 2 hours. Clean code, nice logging, p
 
 It was also completely useless.
 
-## How a Grid Bot Works
+## How does a grid bot work?
 
 ```
 Sell -------- $105
@@ -33,7 +33,7 @@ Simple, right? Price bounces between levels, you collect the spread. In a rangin
 
 **The keyword is "ranging."**
 
-## What Actually Happens
+## Why do grid bots fail in trending markets?
 
 ### Scenario 1: The Market Goes Up
 
@@ -53,7 +53,7 @@ Even in a "perfect" ranging market, slippage ate my profits alive. Each trade lo
 
 And in crypto, slippage gets worse exactly when you need it least — during volatile moves when everyone is trading.
 
-## The Math That Killed It
+## How much money did I lose with a grid bot?
 
 I ran my grid bot for a week. Here's the reality:
 
@@ -69,7 +69,7 @@ The fundamental problem is that **crypto trends more than it ranges**. Grid bots
 
 This isn't a bug. It's a structural flaw. No amount of parameter tuning fixes it. You can adjust grid spacing, number of levels, range bounds — none of it matters when the market decides to pick a direction.
 
-## What I Learned
+## What should you use instead of a grid bot?
 
 1. **Strategies that work "everywhere" usually work nowhere.** If it sounds too simple, it probably doesn't account for the thing that will kill it.
 
