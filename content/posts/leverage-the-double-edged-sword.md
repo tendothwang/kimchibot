@@ -1,5 +1,5 @@
 ---
-title: "Leverage: The Double-Edged Sword (Why I Use 3x)"
+title: "Binance Offers 125x Leverage. I Use 3x. Here's Why"
 date: 2026-03-19
 draft: false
 tags: ["leverage", "risk-management", "crypto", "trading-bot"]

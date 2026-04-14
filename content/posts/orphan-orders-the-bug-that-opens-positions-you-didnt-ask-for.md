@@ -2,8 +2,9 @@
 title: "Orphan Orders: The Bug That Opens Positions You Didn't Ask For"
 date: 2026-04-10T14:00:00
 draft: false
-tags: ["debugging", "binance", "algo-orders", "trading-bot", "stop-loss", "ccxt"]
-categories: ["Engineering"]
+tags: ["debugging", "binance", "algo-orders", "trading-bot", "stop-loss", "ccxt", "bot-autopsy"]
+categories: ["Story"]
+series: ["Bot Autopsy"]
 summary: "My bot left a stop loss order on the exchange after closing a position. Hours later, it triggered and opened an unintended trade. Here's what caused it and how I fixed it."
 ---
 

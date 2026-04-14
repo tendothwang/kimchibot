@@ -2,8 +2,9 @@
 title: "The Backtest Looked Amazing. It Was Lying."
 date: 2026-04-05
 draft: false
-tags: ["backtesting", "overfitting", "trading-bot", "crypto", "lessons-learned"]
-categories: ["Lessons"]
+tags: ["backtesting", "overfitting", "trading-bot", "crypto", "lessons-learned", "killed-bots"]
+categories: ["Story"]
+series: ["Killed Bots"]
 summary: "My momentum bot showed incredible returns in backtests. Then I learned about overfitting — the hard way."
 ---
 

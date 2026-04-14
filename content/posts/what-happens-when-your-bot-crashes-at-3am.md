@@ -2,8 +2,9 @@
 title: "What Happens When Your Bot Crashes at 3 AM"
 date: 2026-03-22
 draft: false
-tags: ["reliability", "crash-recovery", "trading-bot", "python", "devops"]
-categories: ["Engineering"]
+tags: ["reliability", "crash-recovery", "trading-bot", "python", "devops", "bot-autopsy"]
+categories: ["Story"]
+series: ["Bot Autopsy"]
 summary: "Your bot will crash. At night. On a weekend. With open positions. Here's how to make sure it recovers gracefully."
 ---
 

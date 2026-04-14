@@ -1,5 +1,5 @@
 ---
-title: "How I Verify My Bot Matches the Backtest (The Compare Tool)"
+title: "My Backtest Lied to Me. Here's How I Caught It"
 date: 2026-04-10T15:00:00
 draft: false
 tags: ["backtesting", "verification", "trading-bot", "python", "crypto", "live-trading"]

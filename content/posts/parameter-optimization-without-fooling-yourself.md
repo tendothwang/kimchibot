@@ -1,5 +1,5 @@
 ---
-title: "Parameter Optimization Without Fooling Yourself"
+title: "I Optimized My Bot Until It Was Perfect. Then Reality Hit"
 date: 2026-03-21
 draft: false
 tags: ["optimization", "grid-search", "overfitting", "trading-bot", "backtesting"]

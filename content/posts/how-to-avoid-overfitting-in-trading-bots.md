@@ -1,5 +1,5 @@
 ---
-title: "How to Avoid Overfitting in Trading Bots: A Practical Checklist"
+title: "Your Trading Bot Is Overfitting. Here's How to Prove It"
 date: 2026-04-06T12:00:00
 draft: false
 tags: ["overfitting", "backtesting", "trading-bot", "crypto", "machine-learning"]

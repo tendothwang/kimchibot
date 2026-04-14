@@ -2,8 +2,9 @@
 title: "Why Grid Bots Are a Beautiful Lie"
 date: 2026-04-06
 draft: false
-tags: ["grid-bot", "trading-bot", "crypto", "lessons-learned"]
-categories: ["Strategy"]
+tags: ["grid-bot", "trading-bot", "crypto", "lessons-learned", "killed-bots"]
+categories: ["Story"]
+series: ["Killed Bots"]
 summary: "Grid bots look perfect on paper. Buy low, sell high, automatically. Here's why I killed mine after a week."
 ---
 

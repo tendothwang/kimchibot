@@ -1,5 +1,5 @@
 ---
-title: "The SL Ratio Filter: How I Ban Coins That Don't Respect FVGs"
+title: "Some Coins Will Always Kill Your Bot. Here's How I Ban Them"
 date: 2026-04-12T18:00:00
 draft: false
 tags: ["fvg", "coin-selection", "stop-loss", "filter", "trading-bot", "crypto"]

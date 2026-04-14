@@ -1,5 +1,5 @@
 ---
-title: "ccxt + Binance Futures: The Complete Python Guide"
+title: "The ccxt Guide I Wish I Had Before Losing Money on Binance Futures"
 date: 2026-04-07T12:00:00
 draft: false
 tags: ["ccxt", "binance", "python", "futures", "tutorial", "api"]

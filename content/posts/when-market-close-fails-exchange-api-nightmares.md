@@ -2,8 +2,9 @@
 title: "When Market Close Fails: Exchange API Nightmares at 3 AM"
 date: 2026-04-10T17:00:00
 draft: false
-tags: ["debugging", "binance", "api", "trading-bot", "crash-recovery", "ccxt"]
-categories: ["Engineering"]
+tags: ["debugging", "binance", "api", "trading-bot", "crash-recovery", "ccxt", "bot-autopsy"]
+categories: ["Story"]
+series: ["Bot Autopsy"]
 summary: "My bot tried to close a position. The exchange said no. Three times. Here's what happens when market close fails and how to survive it."
 ---
 
