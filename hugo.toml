@@ -5,7 +5,7 @@ theme = 'PaperMod'
 
 [params]
   favicon = "/favicon.svg"
-  description = "I tortured Claude Code so you don't have to"
+  description = "I'm torturing AI into building me a path to FIRE — one trading bot at a time"
   author = "KimchiBot"
   showReadingTime = true
   showShareButtons = false
@@ -17,7 +17,7 @@ theme = 'PaperMod'
 
   [params.homeInfoParams]
     Title = "KimchiBot"
-    Content = "Real trading bots built with AI. Real losses. Real lessons."
+    Content = "I'm torturing AI into building me a path to financial independence — one trading bot at a time. Real money. Real losses. Real data."
 
   [[params.socialIcons]]
     name = "x"
