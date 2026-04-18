@@ -1,6 +1,6 @@
 ---
 title: "17 Days of Live Trading: +394U, a -527U Hole, and the Comeback"
-date: 2026-04-18T18:00:00
+date: 2026-04-18T06:00:00
 draft: false
 tags: ["live-trading", "performance", "fvg", "real-money", "trading-bot", "monthly-report"]
 categories: ["Story"]

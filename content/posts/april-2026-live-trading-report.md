@@ -1,6 +1,6 @@
 ---
 title: "April 2026 Live Trading Report"
-date: 2026-04-18T17:00:00
+date: 2026-04-18T05:00:00
 draft: false
 tags: ["live-trading", "performance", "monthly-report", "fvg", "trading-bot", "crypto"]
 categories: ["Report"]
