@@ -23,6 +23,9 @@ theme = 'PaperMod'
     name = "x"
     url = "https://x.com/kimchibot_x"
 
+  [params.footer]
+    text = "[Privacy](/privacy/) · [Disclaimer](/disclaimer/)"
+
 [menu]
   [[menu.main]]
     identifier = "posts"
@@ -49,16 +52,6 @@ theme = 'PaperMod'
     name = "Contact"
     url = "/contact/"
     weight = 50
-  [[menu.main]]
-    identifier = "disclaimer"
-    name = "Disclaimer"
-    url = "/disclaimer/"
-    weight = 60
-  [[menu.main]]
-    identifier = "privacy"
-    name = "Privacy"
-    url = "/privacy/"
-    weight = 70
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
