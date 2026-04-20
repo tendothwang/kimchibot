@@ -44,6 +44,21 @@ theme = 'PaperMod'
     name = "About"
     url = "/about/"
     weight = 40
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 50
+  [[menu.main]]
+    identifier = "disclaimer"
+    name = "Disclaimer"
+    url = "/disclaimer/"
+    weight = 60
+  [[menu.main]]
+    identifier = "privacy"
+    name = "Privacy"
+    url = "/privacy/"
+    weight = 70
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
