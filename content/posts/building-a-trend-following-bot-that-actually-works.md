@@ -4,7 +4,7 @@ date: 2026-04-03
 draft: false
 tags: ["trend-following", "trading-bot", "python", "crypto", "binance"]
 categories: ["Strategy"]
-summary: "After killing 4 bots, I built one that survived backtesting, dry runs, and live trading. Here's the full breakdown."
+summary: "How I built a trend following crypto bot that actually makes money. After killing 4 trading bots, this is the one that survived backtesting, dry runs, and live trading on Binance Futures."
 ---
 
 ## Can a trend following bot actually make money in crypto?

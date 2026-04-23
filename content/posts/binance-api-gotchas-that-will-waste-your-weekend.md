@@ -30,6 +30,44 @@ exchange.load_time_difference()
 
 And **resync every hour**. I learned this after random failures at 3 AM when nobody was around to restart the bot.
 
+## How do you set leverage on Binance Futures with ccxt in Python?
+
+The official ccxt method `set_leverage` is what you want, but the parameters are not obvious from the docs:
+
+```python
+exchange = ccxt.binance({
+    'apiKey': API_KEY,
+    'secret': API_SECRET,
+    'options': {
+        'defaultType': 'future',
+        'adjustForTimeDifference': True,
+    }
+})
+
+# Set 3x leverage on BTC/USDT perpetual
+exchange.set_leverage(3, 'BTC/USDT:USDT')
+```
+
+Three things that will trip you up:
+
+1. **Symbol format matters.** Use `'BTC/USDT:USDT'` (with the settle currency suffix), not `'BTC/USDT'`. The plain spot-style symbol may silently fail or set leverage on the wrong market.
+
+2. **You must call `set_leverage` before the first order on each symbol.** Binance does not auto-apply your account default leverage to new symbols you trade.
+
+3. **Re-set after symbol rotation.** If your bot drops a coin and picks up a new one, call `set_leverage` again on the new symbol before opening a position.
+
+Also handy:
+
+```python
+# Switch to isolated margin (per-position liquidation)
+exchange.set_margin_mode('isolated', 'BTC/USDT:USDT')
+
+# Or cross margin (shared collateral)
+exchange.set_margin_mode('cross', 'BTC/USDT:USDT')
+```
+
+`set_margin_mode` will throw an error if the position is already open in the other mode. Catch that and continue — it just means you don't need to change anything.
+
 ## Why does fetch_balance return zero on Binance Futures?
 
 On Binance Futures, the "correct" way to fetch your USDT balance:
