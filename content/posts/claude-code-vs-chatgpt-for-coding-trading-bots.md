@@ -2,9 +2,9 @@
 title: "Claude Code vs ChatGPT for Building Trading Bots: An Honest Comparison"
 date: 2026-04-03T12:00:00
 draft: false
-tags: ["claude-code", "chatgpt", "ai", "trading-bot", "comparison"]
+tags: ["claude-ai-trading-bot", "claude-trading-bot", "ai-trading-bot", "claude-code", "chatgpt-trading-bot", "comparison"]
 categories: ["Guide"]
-summary: "I've used both AI tools to build trading bots. Here's what each is good at, what each fails at, and which one I actually use."
+summary: "Claude AI trading bot vs ChatGPT trading bot: an honest comparison after building both. What each AI is good at, what each fails at, and which one I actually use for live trading."
 ---
 
 ## The Context

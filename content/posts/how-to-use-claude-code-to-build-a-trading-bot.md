@@ -2,9 +2,9 @@
 title: "How to Use Claude Code to Build a Trading Bot (Honestly)"
 date: 2026-03-28
 draft: false
-tags: ["claude-code", "ai", "tutorial", "trading-bot", "python"]
+tags: ["claude-ai-trading-bot", "claude-trading-bot", "ai-trading-bot", "claude-code", "tutorial", "python"]
 categories: ["Guide"]
-summary: "A practical guide to building trading bots with AI. What Claude Code is great at, what it's terrible at, and how to get the best results."
+summary: "A practical guide to building a Claude AI trading bot. What Claude Code is great at, what it's terrible at, and how to get the best results when building a crypto trading bot with AI."
 ---
 
 ## What Claude Code Actually Is

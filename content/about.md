@@ -8,9 +8,9 @@ url: "/about/"
 
 I'm a developer from South Korea on a mission: **use AI to build trading bots that generate enough passive income to retire early.**
 
-That's the FIRE dream — Financial Independence, Retire Early. Instead of index funds and rental properties, I'm taking the degenerate path: crypto trading bots built by torturing Claude Code until it writes something that actually works.
+That's the FIRE dream — Financial Independence, Retire Early. Instead of index funds and rental properties, I'm taking the degenerate path: building a Claude AI trading bot that runs on Binance Futures with real money.
 
-This blog is the honest, unfiltered journal of that experiment. Every trade is real money. Every loss is published. Every bug is documented.
+This blog is the honest, unfiltered journal of that experiment. Every trade is real. Every loss is published. Every bug in my Claude trading bot is documented.
 
 ### The Scoreboard So Far
 
