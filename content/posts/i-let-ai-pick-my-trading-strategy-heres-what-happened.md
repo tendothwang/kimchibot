@@ -4,7 +4,7 @@ date: 2026-04-10T12:00:00
 draft: false
 tags: ["claude-code", "ai", "trading-bot", "strategy", "crypto", "machine-learning"]
 categories: ["Story"]
-summary: "I gave Claude Code my trading data, my failures, and my constraints. Then I asked it to design a strategy from scratch. The result outperformed everything I'd built manually."
+summary: "I gave Claude Code my trading data, my prior failures, and my constraints, and asked it to suggest a strategy from scratch. Here's how the experiment was set up and what the results actually told me."
 ---
 
 ## The Setup

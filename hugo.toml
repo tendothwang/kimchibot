@@ -5,7 +5,7 @@ theme = 'PaperMod'
 
 [params]
   favicon = "/favicon.svg"
-  description = "I'm torturing AI into building me a path to FIRE — one trading bot at a time"
+  description = "Engineering notes on building crypto trading bots with Python and AI coding tools. Bug write-ups, exchange API gotchas, and what I learned from each failed strategy."
   author = "KimchiBot"
   showReadingTime = true
   showShareButtons = false
@@ -17,7 +17,7 @@ theme = 'PaperMod'
 
   [params.homeInfoParams]
     Title = "KimchiBot"
-    Content = "I'm torturing AI into building me a path to financial independence — one trading bot at a time. Real money. Real losses. Real data."
+    Content = "Engineering notes on building crypto trading bots with Python, ccxt, and AI coding tools. Bug write-ups, exchange API gotchas, strategy post-mortems, and lessons from each one I had to kill."
 
   [[params.socialIcons]]
     name = "x"

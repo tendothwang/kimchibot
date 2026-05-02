@@ -6,53 +6,31 @@ url: "/about/"
 
 ## About KimchiBot
 
-I'm a developer from South Korea on a mission: **use AI to build trading bots that generate enough passive income to retire early.**
+I'm a software developer from South Korea writing about a hobby project: building crypto trading bots with Python and AI coding tools (mainly Claude Code).
 
-That's the FIRE dream — Financial Independence, Retire Early. Instead of index funds and rental properties, I'm taking the degenerate path: building a Claude AI trading bot that runs on Binance Futures with real money.
+This blog is the engineering journal of that project. The goal is simple — write down what I tried, what broke, and what I learned, in enough detail that someone else trying the same thing has a head start.
 
-This blog is the honest, unfiltered journal of that experiment. Every trade is real. Every loss is published. Every bug in my Claude trading bot is documented.
+### What I Write About
 
-### The Scoreboard So Far
+- **Bug write-ups** — timezone bugs, PID lockfiles, exchange API quirks, and the kind of failures that only show up in production at 3 AM
+- **Strategy post-mortems** — I've started six strategies. Most didn't survive contact with reality. Each one has a story about why
+- **Tooling** — using Claude Code (and ChatGPT) to write Python, debug Binance Futures integrations, and refactor across files
+- **Backtest engineering** — why most backtests lie, and how I try to make mine lie a little less
 
-- **6 bots built** with Python + Claude Code
-- **4 killed** (Grid, RSI Scalper, Momentum, Lead-Lag)
-- **2 running live** on Binance Futures with real money
-- **April 2026:** +394U net profit, -527U max drawdown, 5,299 trades
-- **Fees ate 42%** of gross profits — nobody tells you this part
+### Things I Don't Write About
 
-### What Makes This Blog Different
+- **Trading advice.** I'm not qualified to give it and I don't.
+- **"Get rich" promises.** I'm building this as a learning project, not a business pitch.
+- **Signals or paid groups.** I don't sell anything from this site.
 
-Most trading bot content falls into two categories: fake gurus showing Lamborghinis, or dry tutorials that stop before the hard part.
+### Why "KimchiBot"
 
-This blog is neither. Here you'll find:
-
-- **Real Binance account data** — not backtests, not simulations, actual PnL from live trading
-- **Every failure documented** — the bot that lost -121U while I slept, the 4 strategies I had to kill, the -527U drawdown
-- **The full AI development process** — I built everything with Claude Code. The good, the bad, and the "why did it generate that"
-- **Monthly live reports** — transparent performance tracking with no numbers hidden
-
-### Why "KimchiBot"?
-
-"Kimchi premium" is a well-known term in crypto — the price difference between Korean and international exchanges. I'm Korean, I build bots, and I thought it was funny.
-
-### The FIRE Math
-
-Can trading bots actually fund early retirement? I don't know yet. That's what this experiment is about.
-
-What I do know:
-- My bot averages +23U/day over the first 17 days of live trading
-- Fees and slippage eat almost half of gross profits
-- One bad week can wipe out a month of gains
-- The out-of-sample backtest shows 3 profitable quarters out of 4
-
-Is it enough? Is it sustainable? Follow along and we'll find out together.
+"Kimchi premium" is crypto slang for the price gap between Korean exchanges and the rest of the world. I'm Korean and I write bots, so the name stuck.
 
 ### Contact
 
-Got questions? Found a bug in my logic? Want to share your own bot stories?
-
-Find me on [X (@kimchibot_x)](https://x.com/kimchibot_x) or [GitHub](https://github.com/tendothwang).
+Find me on [X (@kimchibot_x)](https://x.com/kimchibot_x) or [GitHub](https://github.com/tendothwang). I read everything, even if I don't always reply quickly.
 
 ---
 
-*Disclaimer: Nothing on this site is financial advice. Trading crypto with leverage is risky. I share my experience for educational purposes only. Don't trade money you can't afford to lose.*
+*This site is for educational and personal documentation purposes only. Nothing here is financial advice. Trading crypto with leverage carries real risk of loss — don't trade money you can't afford to lose.*

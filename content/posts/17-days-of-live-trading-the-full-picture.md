@@ -1,11 +1,11 @@
 ---
-title: "17 Days of Live Trading: +394U, a -527U Hole, and the Comeback"
+title: "17 Days of Live Trading: A Drawdown, a Recovery, and What I Learned"
 date: 2026-04-18T06:00:00
 draft: false
-tags: ["live-trading", "performance", "fvg", "real-money", "trading-bot", "monthly-report"]
+tags: ["live-trading", "performance", "fvg", "trading-bot", "monthly-report"]
 categories: ["Story"]
 series: ["AI vs Market"]
-summary: "My bot went -527U in the first week. I didn't turn it off. Here's what happened next — with real numbers from Binance."
+summary: "My bot's first three weeks of live trading were rough. A deep early drawdown forced me to think hard about whether the strategy or the structure was at fault. Here's what I changed and why."
 ---
 
 ## What does it feel like to watch your bot lose $527 in a week?

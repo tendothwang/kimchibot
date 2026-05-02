@@ -1,11 +1,11 @@
 ---
-title: "How I Built a Claude AI Trading Bot That Makes Real Money"
+title: "How I Built a Claude AI Trading Bot for Live Crypto Trading"
 date: 2026-04-26T09:00:00+09:00
 draft: false
-tags: ["claude-ai-trading-bot", "claude-trading-bot", "ai-trading-bot", "claude-code", "crypto-trading-bot", "buildinpublic", "fire"]
-categories: ["Story"]
+tags: ["claude-ai-trading-bot", "claude-trading-bot", "ai-trading-bot", "claude-code", "crypto-trading-bot"]
+categories: ["Guide"]
 series: ["AI vs Market"]
-summary: "A complete guide to building a Claude AI trading bot that actually works. Real Binance Futures account, +394U net profit in April 2026, 5,299 trades, every bug documented."
+summary: "A walkthrough of how I built a Claude AI trading bot end to end — strategy logic, ccxt integration with Binance Futures, stop loss handling, coin rotation, and the bugs I had to fix along the way."
 ---
 
 ## What is a Claude AI trading bot?

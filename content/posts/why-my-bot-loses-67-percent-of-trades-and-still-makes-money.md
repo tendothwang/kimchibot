@@ -1,10 +1,10 @@
 ---
-title: "Why My Bot Loses 67% of Trades and Still Makes Money"
+title: "Why Win Rate Is Misleading: A 33% Bot Can Still Have Positive Expectancy"
 date: 2026-04-12T17:00:00
 draft: false
 tags: ["risk-reward", "win-rate", "fvg", "trading-psychology", "trading-bot", "crypto"]
 categories: ["Strategy"]
-summary: "Two out of three trades are losses. My equity curve still goes up. Here's why win rate is the most overrated metric in trading."
+summary: "My FVG bot has a win rate around 33%. That sounds bad until you do the expectancy math. Here's why win rate is one of the most misleading metrics for evaluating a strategy."
 ---
 
 ## How can a bot that loses most trades be profitable?

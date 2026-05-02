@@ -1,11 +1,11 @@
 ---
-title: "April 2026 Live Trading Report"
+title: "April 2026 Bot Performance Notes"
 date: 2026-04-18T05:00:00
 draft: false
 tags: ["live-trading", "performance", "monthly-report", "fvg", "trading-bot", "crypto"]
 categories: ["Report"]
 series: ["Monthly Report"]
-summary: "Real Binance numbers from April 2026. 5,299 trades, +394U net profit, -527U max drawdown. Full breakdown by day, coin, and cost."
+summary: "A breakdown of how the bot performed in April 2026. Trade counts, drawdown, fee load, and what the per-coin and per-day data revealed about the strategy."
 ---
 
 ## Summary

@@ -1,11 +1,11 @@
 ---
-title: "I Made Money in 1 Hour With Claude Code"
+title: "Building a Working Trading Bot in 1 Hour With Claude Code"
 date: 2026-04-21T06:00:00
 draft: false
-tags: ["claude-ai-trading-bot", "claude-trading-bot", "ai-trading-bot", "claude-code", "crypto-trading-bot", "buildinpublic", "fire", "automation"]
+tags: ["claude-ai-trading-bot", "claude-trading-bot", "ai-trading-bot", "claude-code", "crypto-trading-bot", "automation"]
 categories: ["Story"]
 series: ["AI vs Market"]
-summary: "I built a Claude AI trading bot in 1 hour. ICT? Grid bots? FVG? None of it matters. The edge is automating the three things humans cannot do consistently — and that's what makes a Claude trading bot actually profitable."
+summary: "I wrote the entry/exit logic of my Claude AI trading bot in about an hour. The strategy itself wasn't the hard part — the structure around it was. Here's what I had to build after to make a Claude trading bot survive live data."
 ---
 
 ## Can you really make money in 1 hour with Claude Code?

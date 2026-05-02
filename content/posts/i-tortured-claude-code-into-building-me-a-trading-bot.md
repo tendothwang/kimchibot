@@ -1,5 +1,5 @@
 ---
-title: "I Tortured Claude Code Into Building Me a Trading Bot — Here's What Happened"
+title: "I Built 6 Trading Bots With Claude Code — Here's What Happened"
 date: 2026-04-07
 draft: false
 tags: ["claude-ai-trading-bot", "claude-trading-bot", "ai-trading-bot", "claude-code", "crypto-trading-bot", "python", "introduction"]
@@ -9,9 +9,9 @@ summary: "A developer from Korea built 6 crypto trading bots using Claude Code. 
 
 ## Who Am I?
 
-I'm a developer from South Korea who wanted to make money while sleeping.
+I'm a developer from South Korea who got curious about whether AI coding tools could help me build a working crypto trading bot.
 
-I can code. But building a profitable trading bot is a completely different beast — it's not about clean code, it's about markets, statistics, and not fooling yourself with pretty backtests.
+I can code. But shipping a trading bot is a completely different beast — it's not about clean code, it's about markets, statistics, and not fooling yourself with pretty backtests.
 
 My weapon of choice: [Claude Code](https://claude.ai/claude-code). An AI that doesn't complain when you ask it to rewrite the same function 47 times.
 

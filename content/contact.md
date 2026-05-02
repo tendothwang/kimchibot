@@ -10,8 +10,11 @@ I welcome questions, feedback, corrections, and stories from other bot builders.
 
 ### The Best Ways to Reach Me
 
+**Email:** [tendot.hwang@gmail.com](mailto:tendot.hwang@gmail.com)
+For longer questions, corrections, or anything that doesn't fit in a tweet. I read every email but reply in batches, so please be patient.
+
 **X (Twitter):** [@kimchibot_x](https://x.com/kimchibot_x)
-The fastest way. I post bot updates there and reply to DMs and mentions.
+The fastest way for short questions. I post bot updates there and reply to DMs and mentions.
 
 **GitHub:** [tendothwang](https://github.com/tendothwang)
 Open an issue on any of my public repositories if you found a bug in code I've published or want to discuss technical details.
@@ -35,7 +38,7 @@ I'm a one-person operation. I try to respond within a week, but sometimes it tak
 
 ### Business Inquiries
 
-For collaboration proposals or business-related questions, please reach out via X DM and mention it's a business inquiry.
+For collaboration proposals or business-related questions, email [tendot.hwang@gmail.com](mailto:tendot.hwang@gmail.com) with "Business" in the subject line.
 
 ---
 

@@ -4,14 +4,14 @@ date: 2026-04-03
 draft: false
 tags: ["trend-following", "trading-bot", "python", "crypto", "binance"]
 categories: ["Strategy"]
-summary: "How I built a trend following crypto bot that actually makes money. After killing 4 trading bots, this is the one that survived backtesting, dry runs, and live trading on Binance Futures."
+summary: "How I built a trend following crypto bot in Python: signal logic, exits, position sizing, and the design choices that came out of killing four earlier strategies."
 ---
 
-## Can a trend following bot actually make money in crypto?
+## Can a trend following bot actually work in crypto?
 
-Out of 6 bots I built, this is the one that lived. The Trend Following Bot v4.0.
+Out of 6 bots I built, this is the one that survived. The Trend Following Bot v4.0.
 
-It's not sexy. It doesn't have a fancy name. It doesn't promise 1000% returns. But it makes money — consistently, across different market conditions, with real capital.
+It's not sexy. It doesn't have a fancy name. It doesn't promise 1000% returns. It just produced positive expectancy across the conditions I tested it in, which is more than the four bots I shut down can say.
 
 Here's how it works.
 
