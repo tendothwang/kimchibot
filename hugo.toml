@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'KimchiBot'
 theme = 'PaperMod'
 
+[pagination]
+  pagerSize = 100
+
 [params]
   favicon = "/favicon.svg"
   description = "Engineering notes on building crypto trading bots with Python and AI coding tools. Bug write-ups, exchange API gotchas, and what I learned from each failed strategy."
