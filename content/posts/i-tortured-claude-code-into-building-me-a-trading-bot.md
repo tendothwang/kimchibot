@@ -2,6 +2,7 @@
 title: "I Built 6 Trading Bots With Claude Code — Here's What Happened"
 date: 2026-04-07
 draft: false
+robotsNoIndex: true
 tags: ["claude-ai-trading-bot", "claude-trading-bot", "ai-trading-bot", "claude-code", "crypto-trading-bot", "python", "introduction"]
 categories: ["Story"]
 summary: "A developer from Korea built 6 crypto trading bots using Claude Code. 4 failed. Here's the honest story of building a Claude AI trading bot — and a guide so you can build one too."

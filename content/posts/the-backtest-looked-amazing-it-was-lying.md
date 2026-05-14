@@ -2,6 +2,7 @@
 title: "The Backtest Looked Amazing. It Was Lying."
 date: 2026-04-05
 draft: false
+robotsNoIndex: true
 tags: ["backtesting", "overfitting", "trading-bot", "crypto", "lessons-learned", "killed-bots"]
 categories: ["Story"]
 series: ["Killed Bots"]
