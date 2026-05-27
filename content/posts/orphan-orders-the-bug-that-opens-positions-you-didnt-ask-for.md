@@ -1,6 +1,6 @@
 ---
 title: "Orphan Orders: The Bug That Opens Positions You Didn't Ask For"
-date: 2026-04-10T14:00:00
+date: 2026-04-10T10:09:17+09:00
 draft: false
 tags: ["debugging", "binance", "algo-orders", "trading-bot", "stop-loss", "ccxt", "bot-autopsy"]
 categories: ["Story"]

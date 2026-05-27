@@ -1,6 +1,6 @@
 ---
 title: "Why Grid Bots Are a Beautiful Lie"
-date: 2026-04-06
+date: 2026-04-06T15:55:11+09:00
 draft: false
 robotsNoIndex: true
 tags: ["grid-bot", "trading-bot", "crypto", "lessons-learned", "killed-bots"]

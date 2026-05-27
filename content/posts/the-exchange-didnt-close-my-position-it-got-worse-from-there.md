@@ -1,6 +1,6 @@
 ---
 title: "The Exchange Didn't Close My Position. It Got Worse From There"
-date: 2026-04-15T17:00:00
+date: 2026-04-15T07:30:19+09:00
 draft: false
 tags: ["debugging", "binance", "api", "crash-recovery", "trading-bot", "bot-autopsy"]
 categories: ["Story"]

@@ -1,6 +1,6 @@
 ---
 title: "Stop Trading Random Coins. Here's How My Bot Picks Winners"
-date: 2026-04-01
+date: 2026-04-01T10:45:46+09:00
 draft: false
 tags: ["coin-selection", "volatility", "backtesting", "trading-bot", "crypto"]
 categories: ["Strategy"]

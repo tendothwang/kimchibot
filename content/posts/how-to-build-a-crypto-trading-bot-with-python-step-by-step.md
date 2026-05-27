@@ -1,6 +1,6 @@
 ---
 title: "How to Build a Crypto Trading Bot with Python: Step-by-Step Guide"
-date: 2026-04-08
+date: 2026-04-08T22:38:20+09:00
 draft: false
 tags: ["python", "tutorial", "trading-bot", "crypto", "binance", "ccxt", "beginner"]
 categories: ["Guide"]

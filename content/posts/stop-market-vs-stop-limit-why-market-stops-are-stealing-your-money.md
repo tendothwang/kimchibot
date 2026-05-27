@@ -1,6 +1,6 @@
 ---
 title: "STOP_MARKET vs STOP_LIMIT on Binance Futures: Why Market Stops Are Stealing Your Money"
-date: 2026-04-10
+date: 2026-04-10T16:19:30+09:00
 draft: false
 tags: ["stop-loss", "binance", "futures", "slippage", "trading-bot", "ccxt", "stop-limit", "stop-market"]
 categories: ["Engineering"]

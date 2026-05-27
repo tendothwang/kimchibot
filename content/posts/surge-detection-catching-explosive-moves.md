@@ -1,6 +1,6 @@
 ---
 title: "The Trade Went +4% in 5 Minutes. Then It All Disappeared"
-date: 2026-03-23
+date: 2026-03-23T09:42:30+09:00
 draft: false
 tags: ["surge", "trailing-stop", "trading-bot", "crypto", "strategy"]
 categories: ["Strategy"]

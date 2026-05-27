@@ -1,6 +1,6 @@
 ---
 title: "My Backtest Lied to Me. Here's How I Caught It"
-date: 2026-04-10T15:00:00
+date: 2026-04-10T19:06:47+09:00
 draft: false
 tags: ["backtesting", "verification", "trading-bot", "python", "crypto", "live-trading"]
 categories: ["Engineering"]

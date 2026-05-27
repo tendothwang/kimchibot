@@ -1,6 +1,6 @@
 ---
 title: "Python Trading Bot Architecture: How to Structure Your Code"
-date: 2026-04-05T12:00:00
+date: 2026-04-05T15:51:11+09:00
 draft: false
 tags: ["python", "architecture", "trading-bot", "tutorial", "beginner"]
 categories: ["Guide"]

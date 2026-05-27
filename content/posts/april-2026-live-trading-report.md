@@ -1,6 +1,6 @@
 ---
 title: "April 2026 Bot Performance Notes"
-date: 2026-04-18T05:00:00
+date: 2026-04-18T15:42:34+09:00
 draft: false
 tags: ["live-trading", "performance", "monthly-report", "fvg", "trading-bot", "crypto"]
 categories: ["Report"]

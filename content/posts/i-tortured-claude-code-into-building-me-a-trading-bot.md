@@ -1,6 +1,6 @@
 ---
 title: "I Built 6 Trading Bots With Claude Code — Here's What Happened"
-date: 2026-04-07
+date: 2026-04-07T07:49:24+09:00
 draft: false
 robotsNoIndex: true
 tags: ["claude-ai-trading-bot", "claude-trading-bot", "ai-trading-bot", "claude-code", "crypto-trading-bot", "python", "introduction"]

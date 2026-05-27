@@ -1,6 +1,6 @@
 ---
 title: "I Let AI Pick My Trading Strategy — Here's What Happened"
-date: 2026-04-10T12:00:00
+date: 2026-04-10T20:50:29+09:00
 draft: false
 tags: ["claude-code", "ai", "trading-bot", "strategy", "crypto", "machine-learning"]
 categories: ["Story"]

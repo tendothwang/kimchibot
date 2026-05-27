@@ -1,6 +1,6 @@
 ---
 title: "Claude Code vs ChatGPT for Building Trading Bots: An Honest Comparison"
-date: 2026-04-03T12:00:00
+date: 2026-04-03T07:40:07+09:00
 draft: false
 tags: ["claude-ai-trading-bot", "claude-trading-bot", "ai-trading-bot", "claude-code", "chatgpt-trading-bot", "comparison"]
 categories: ["Guide"]

@@ -1,6 +1,6 @@
 ---
 title: "Dry Run: The Step Everyone Skips"
-date: 2026-03-20
+date: 2026-03-20T11:05:16+09:00
 draft: false
 tags: ["dry-run", "paper-trading", "testing", "trading-bot", "crypto"]
 categories: ["Guide"]

@@ -1,6 +1,6 @@
 ---
 title: "One Year of Out-of-Sample Testing: Did the FVG Bot Survive?"
-date: 2026-04-10T18:00:00
+date: 2026-04-10T07:30:51+09:00
 draft: false
 tags: ["fvg", "backtesting", "out-of-sample", "trading-bot", "crypto", "validation"]
 categories: ["Strategy"]

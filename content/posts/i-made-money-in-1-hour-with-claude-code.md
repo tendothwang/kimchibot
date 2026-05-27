@@ -1,6 +1,6 @@
 ---
 title: "Building a Working Trading Bot in 1 Hour With Claude Code"
-date: 2026-04-21T06:00:00
+date: 2026-04-21T17:33:34+09:00
 draft: false
 tags: ["claude-ai-trading-bot", "claude-trading-bot", "ai-trading-bot", "claude-code", "crypto-trading-bot", "automation"]
 categories: ["Story"]

@@ -1,6 +1,6 @@
 ---
 title: "Building a Trend Following Bot That Actually Works"
-date: 2026-04-03
+date: 2026-04-03T15:58:21+09:00
 draft: false
 tags: ["trend-following", "trading-bot", "python", "crypto", "binance"]
 categories: ["Strategy"]

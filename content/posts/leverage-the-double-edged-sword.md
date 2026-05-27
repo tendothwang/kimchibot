@@ -1,6 +1,6 @@
 ---
 title: "Binance Offers 125x Leverage. I Use 3x. Here's Why"
-date: 2026-03-19
+date: 2026-03-19T12:18:13+09:00
 draft: false
 tags: ["leverage", "risk-management", "crypto", "trading-bot"]
 categories: ["Lessons"]

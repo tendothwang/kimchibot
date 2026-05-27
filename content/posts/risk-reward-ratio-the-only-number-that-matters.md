@@ -1,6 +1,6 @@
 ---
 title: "Risk-Reward Ratio: The Only Number That Matters"
-date: 2026-03-27
+date: 2026-03-27T13:07:36+09:00
 draft: false
 tags: ["risk-management", "trading-bot", "crypto", "lessons-learned"]
 categories: ["Lessons"]

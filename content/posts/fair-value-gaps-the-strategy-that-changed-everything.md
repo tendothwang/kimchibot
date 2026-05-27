@@ -1,6 +1,6 @@
 ---
 title: "Fair Value Gaps: The Strategy That Changed Everything"
-date: 2026-03-30
+date: 2026-03-30T08:12:24+09:00
 draft: false
 tags: ["fvg", "fair-value-gap", "trading-bot", "crypto", "strategy"]
 categories: ["Strategy"]

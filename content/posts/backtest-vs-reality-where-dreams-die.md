@@ -1,6 +1,6 @@
 ---
 title: "Backtest vs Reality: Where Dreams Go to Die"
-date: 2026-04-04
+date: 2026-04-04T08:11:43+09:00
 draft: false
 tags: ["backtesting", "live-trading", "slippage", "trading-bot", "crypto"]
 categories: ["Lessons"]

@@ -1,6 +1,6 @@
 ---
 title: "Some Coins Will Always Kill Your Bot. Here's How I Ban Them"
-date: 2026-04-12T18:00:00
+date: 2026-04-12T07:30:22+09:00
 draft: false
 tags: ["fvg", "coin-selection", "stop-loss", "filter", "trading-bot", "crypto"]
 categories: ["Strategy"]

@@ -1,6 +1,6 @@
 ---
 title: "The 3 AM Bug: PID Lockfiles and Duplicate Processes"
-date: 2026-03-24
+date: 2026-03-24T22:00:01+09:00
 draft: false
 tags: ["debugging", "python", "pid", "trading-bot", "devops"]
 categories: ["Engineering"]

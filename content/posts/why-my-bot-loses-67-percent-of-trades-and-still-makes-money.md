@@ -1,6 +1,6 @@
 ---
 title: "Why Win Rate Is Misleading: A 33% Bot Can Still Have Positive Expectancy"
-date: 2026-04-12T17:00:00
+date: 2026-04-12T15:37:42+09:00
 draft: false
 tags: ["risk-reward", "win-rate", "fvg", "trading-psychology", "trading-bot", "crypto"]
 categories: ["Strategy"]

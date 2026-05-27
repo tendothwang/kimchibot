@@ -1,6 +1,6 @@
 ---
 title: "What Happens When Your Bot Crashes at 3 AM"
-date: 2026-03-22
+date: 2026-03-22T20:14:13+09:00
 draft: false
 tags: ["reliability", "crash-recovery", "trading-bot", "python", "devops", "bot-autopsy"]
 categories: ["Story"]

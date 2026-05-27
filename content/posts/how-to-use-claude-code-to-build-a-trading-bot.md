@@ -1,6 +1,6 @@
 ---
 title: "How to Use Claude Code to Build a Trading Bot (Honestly)"
-date: 2026-03-28
+date: 2026-03-28T22:54:49+09:00
 draft: false
 tags: ["claude-ai-trading-bot", "claude-trading-bot", "ai-trading-bot", "claude-code", "tutorial", "python"]
 categories: ["Guide"]

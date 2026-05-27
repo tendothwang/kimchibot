@@ -1,6 +1,6 @@
 ---
 title: "The Timezone Bug That Cost Me 9 Hours of Trades"
-date: 2026-03-29
+date: 2026-03-29T12:48:09+09:00
 draft: false
 tags: ["debugging", "timezone", "python", "trading-bot", "crypto"]
 categories: ["Engineering"]

@@ -1,6 +1,6 @@
 ---
 title: "WebSocket vs REST API: I Deleted 150 Lines and Nothing Broke"
-date: 2026-03-31
+date: 2026-03-31T08:01:47+09:00
 draft: false
 tags: ["websocket", "rest-api", "binance", "trading-bot", "python"]
 categories: ["Engineering"]

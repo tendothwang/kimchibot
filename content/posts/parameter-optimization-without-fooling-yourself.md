@@ -1,6 +1,6 @@
 ---
 title: "I Optimized My Bot Until It Was Perfect. Then Reality Hit"
-date: 2026-03-21
+date: 2026-03-21T08:59:39+09:00
 draft: false
 tags: ["optimization", "grid-search", "overfitting", "trading-bot", "backtesting"]
 categories: ["Lessons"]

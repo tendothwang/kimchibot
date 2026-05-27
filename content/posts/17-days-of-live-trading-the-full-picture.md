@@ -1,6 +1,6 @@
 ---
 title: "17 Days of Live Trading: A Drawdown, a Recovery, and What I Learned"
-date: 2026-04-18T06:00:00
+date: 2026-04-18T07:30:57+09:00
 draft: false
 tags: ["live-trading", "performance", "fvg", "trading-bot", "monthly-report"]
 categories: ["Story"]

@@ -1,6 +1,6 @@
 ---
 title: "I Killed 4 Trading Bots So You Don't Have To"
-date: 2026-04-15T18:00:00
+date: 2026-04-15T15:57:27+09:00
 draft: false
 tags: ["trading-bot", "failures", "lessons", "crypto", "strategy", "killed-bots"]
 categories: ["Story"]

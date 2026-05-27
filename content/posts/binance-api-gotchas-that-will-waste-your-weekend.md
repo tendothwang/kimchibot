@@ -1,6 +1,6 @@
 ---
 title: "Binance API Gotchas That Will Waste Your Weekend"
-date: 2026-03-26
+date: 2026-03-26T09:43:03+09:00
 draft: false
 tags: ["binance", "api", "ccxt", "python", "trading-bot"]
 categories: ["Engineering"]

@@ -1,6 +1,6 @@
 ---
 title: "The Coin Scanner: How My Bot Picks 8 Coins Every 3 Hours"
-date: 2026-04-10T16:00:00
+date: 2026-04-10T12:33:55+09:00
 draft: false
 tags: ["coin-selection", "scanner", "volatility", "trading-bot", "crypto", "binance"]
 categories: ["Strategy"]

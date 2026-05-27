@@ -1,6 +1,6 @@
 ---
 title: "Your Trading Bot Is Overfitting. Here's How to Prove It"
-date: 2026-04-06T12:00:00
+date: 2026-04-06T07:30:23+09:00
 draft: false
 tags: ["overfitting", "backtesting", "trading-bot", "crypto", "machine-learning"]
 categories: ["Guide"]

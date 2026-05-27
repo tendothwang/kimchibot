@@ -1,6 +1,6 @@
 ---
 title: "When Market Close Fails: Exchange API Nightmares at 3 AM"
-date: 2026-04-10T17:00:00
+date: 2026-04-10T14:25:05+09:00
 draft: false
 tags: ["debugging", "binance", "api", "trading-bot", "crash-recovery", "ccxt", "bot-autopsy"]
 categories: ["Story"]

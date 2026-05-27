@@ -1,6 +1,6 @@
 ---
 title: "Stop Loss: The Most Important Feature You'll Get Wrong"
-date: 2026-04-02
+date: 2026-04-02T08:43:49+09:00
 draft: false
 tags: ["stop-loss", "trading-bot", "binance", "slippage", "crypto"]
 categories: ["Lessons"]

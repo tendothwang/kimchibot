@@ -1,6 +1,6 @@
 ---
 title: "How I Built a Claude AI Trading Bot for Live Crypto Trading"
-date: 2026-04-26T09:00:00+09:00
+date: 2026-04-26T15:33:34+09:00
 draft: false
 tags: ["claude-ai-trading-bot", "claude-trading-bot", "ai-trading-bot", "claude-code", "crypto-trading-bot"]
 categories: ["Guide"]

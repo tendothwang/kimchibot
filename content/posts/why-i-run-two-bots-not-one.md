@@ -1,6 +1,6 @@
 ---
 title: "Why I Run Two Bots, Not One"
-date: 2026-03-25
+date: 2026-03-25T19:49:43+09:00
 draft: false
 tags: ["portfolio", "diversification", "trading-bot", "crypto", "strategy"]
 categories: ["Strategy"]

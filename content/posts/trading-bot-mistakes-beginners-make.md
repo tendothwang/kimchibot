@@ -1,6 +1,6 @@
 ---
 title: "10 Trading Bot Mistakes Every Beginner Makes (I Made All of Them)"
-date: 2026-04-04T12:00:00
+date: 2026-04-04T15:32:11+09:00
 draft: false
 tags: ["mistakes", "beginner", "trading-bot", "crypto", "lessons-learned"]
 categories: ["Lessons"]
