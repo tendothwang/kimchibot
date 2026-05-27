@@ -1,11 +1,12 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {{- /* Sitemap intentionally lists only posts and the standalone pages
-         (about, contact, disclaimer, privacy). Home and section index pages
-         are excluded so Google focuses crawl budget on real content. */ -}}
+  {{- /* Sitemap includes the home page plus posts and the standalone pages
+         (about, contact, disclaimer, privacy). The /posts/ section index,
+         taxonomy pages, and pagination are excluded so Google focuses
+         crawl budget on real content. */ -}}
   {{- range .Data.Pages }}
-  {{- if and (eq .Kind "page") (not (in .RelPermalink "/page/")) (not (eq .Params.robotsNoIndex true)) }}
+  {{- if or (eq .Kind "home") (and (eq .Kind "page") (not (in .RelPermalink "/page/")) (not (eq .Params.robotsNoIndex true))) }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- if not .Lastmod.IsZero }}
