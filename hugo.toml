@@ -2,6 +2,7 @@ baseURL = 'https://kimchibot.com/'
 languageCode = 'en-us'
 title = 'KimchiBot'
 theme = 'PaperMod'
+buildFuture = true
 
 [pagination]
   pagerSize = 100
