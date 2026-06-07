@@ -17,7 +17,7 @@ Second monthly report in a row in the green.
 | Position | 200 USDT × 3× leverage  ·  starting balance 2,000 USDT |
 | **Total return** | +$952.72 / **+47.6%** in 30 days (697 trades) |
 | Max DD | -$786.21 (-39.3% peak-to-trough) |
-| Fees · funding | ≈ -$293 trading fees (est. 0.07% round-trip × notional) · +$44.30 net funding |
+| Funding | +$44.30 net (already in total) |
 
 I made small adjustments this month.
 
