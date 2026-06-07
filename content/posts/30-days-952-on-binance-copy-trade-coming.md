@@ -12,6 +12,13 @@ From May 9 to June 7 — 30 days — the bot finished **+$952.72** by Binance's 
 
 Second monthly report in a row in the green.
 
+| | |
+|---|---|
+| Position | 200 USDT × 3× leverage  ·  starting balance 2,000 USDT |
+| **Total return** | +$952.72 / **+47.6%** in 30 days (697 trades) |
+| Max DD | -$786.21 (-39.3% peak-to-trough) |
+| Fees · funding | ≈ -$293 trading fees (est. 0.07% round-trip × notional) · +$44.30 net funding |
+
 I made small adjustments this month.
 
 The dynamic risk-reward ladder is tuned to clip losses in overheated zones, and the FVG entry condition now allows a setup where the C3 candle has a bigger body than the C2 (a trend acceleration case).
